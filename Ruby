@@ -22,10 +22,12 @@ class Person
      ["Q","24"]]
 
         Person.sort{|age,name| (age[1]<=>name[1]==0? (age[0]<=>name[0]) : (age[1] <=> name[1])}
-    
+        
+        @age =require 'matrix'
     
         for number in array_length = Person
-                
+            v
+                @age =Matrix[*array].index[i,x]
                 if @age<18 then
                     puts ="You are not allowed to enter this club"
                 else
