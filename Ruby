@@ -4,7 +4,7 @@ class Person
     @age;
     end        
 
-   Person = [["A","19"],
+    Person = [["A","19"],
      ["B","28"],
      ["C","23"],
      ["E","78"],
@@ -21,17 +21,18 @@ class Person
      ["P","12"],
      ["Q","24"]]
 
-    Person.sort{|age,name| (age[1]<=>name[1]==0? (age[0]<=>name[0]) : (age[1] <=> name[1])}
+        Person.sort{|age,name| (age[1]<=>name[1]==0? (age[0]<=>name[0]) : (age[1] <=> name[1])}
     
     
-    for number in array_length = Person
+        for number in array_length = Person
                 
-            if @age<18 then
-            puts ="You are not allowed to enter this club"
-            else
-                if @age=90 then
-                   puts "We wont serve you" 
+                if @age<18 then
+                    puts ="You are not allowed to enter this club"
                 else
-                    puts "You may please enter"
+                     if @age=90 then
+                         puts "We wont serve you" 
+                     else
+                        puts "You may please enter"
              
-            
+        end   
+end
