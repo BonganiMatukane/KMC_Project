@@ -37,7 +37,7 @@ class Person
                          puts "We wont serve you" 
                      else
                         puts "You may please enter"
-            @i++;
-            @x++; 
+            @i++
+            @x++ 
         end   
 end
