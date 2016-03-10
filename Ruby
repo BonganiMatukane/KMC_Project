@@ -2,6 +2,8 @@ class Person
     def initialize (name, age, i, x)
     @name;
     @age;
+    @i =0
+    @x=0
     end        
 
     Person = [["A","19"],
@@ -26,7 +28,7 @@ class Person
         @age =require 'matrix'
     
         for number in array_length = Person
-            v
+            
                 @age =Matrix[*array].index[i,x]
                 if @age<18 then
                     puts ="You are not allowed to enter this club"
@@ -35,6 +37,7 @@ class Person
                          puts "We wont serve you" 
                      else
                         puts "You may please enter"
-             
+            @i++;
+            @x++; 
         end   
 end
