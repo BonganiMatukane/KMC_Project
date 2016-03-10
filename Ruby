@@ -1,5 +1,5 @@
 class Person
-    def initialize (name, age, i, x)
+    def initialize (name, age,age2, i, x)
     @name;
     @age;
     @i =0
@@ -25,19 +25,25 @@ class Person
 
         Person.sort{|age,name| (age[1]<=>name[1]==0? (age[0]<=>name[0]) : (age[1] <=> name[1])}
         
-        @age =require 'matrix'
+        require 'matrix'
     
-        for number in array_length = Person
+        for number in (array_length = Person)
             
-                @age =Matrix[*array].index[i,x]
+                @age =Matrix[*Person].index[i,x]
                 if @age<18 then
                     puts ="You are not allowed to enter this club"
                 else
-                     if @age=90 then
+                     if @age>=90 then
                          puts "We wont serve you" 
                      else
                         puts "You may please enter"
             @i++
             @x++ 
         end   
+        
+        @age = Matrix[*Person].index[16,16]
+        @age2 = Matrix[*person].index[14.14]
+        @age = @age + @age2
+        puts "X will be " +@age.to_s
+        
 end
